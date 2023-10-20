@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+}
+#back{
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+}
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: conver;
+}
+#top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+#workingarea{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0 ;
+}
+#nav img{
+    height: 60px;
+}
+#nleft, #nright{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+#nav a{
+    pointer-events: all;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#hero{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#heroleft{
+    min-width: 50%;
+    /* background-color: yellow; */
+}
+#heroleft .elem{
+    position: relative;
+    height: 17vh;
+    overflow: hidden;
+    /* background-color: red; */
+}
+#heroleft .elem h1:nth-child(1){
+    top: 9px;
+}
+#heroleft .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: .9;
+    color: #fff;
+    font-weight: 100;
+    font-size: 6vw;
+    letter-spacing: -4px;
+    margin: 18px 0;
+    text-transform: uppercase;
+}
+#heroleft button{
+    pointer-events: all;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: .8vw 3vw;
+    font-size: 2vw;
+    margin-top: 4vw;
+    border: none;
+    background-color: rgb(70, 69, 69);
+    color: #fff;
+}
+#heroright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 17%;
+    color: #fff;
+    /* background-color: green; */
+}
+#heroright p{
+    text-align: right;
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+#heroright #imagediv{
+    width: 100%;
+    height: 170px;
+    background-image: url("https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D&w=800");
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    margin-bottom: 30px;    
+}
+#heroright p:nth-child(3){
+    margin-bottom: 50px;
+}
